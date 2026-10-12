@@ -27,26 +27,7 @@
   color-scheme: light;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #1E201B;
-    --card: #272A23;
-    --strip-bg: #2A2C25;
-    --strip-text: #BDBAAE;
-    --text: #EEEADF;
-    --text-2: #D3CFC2;
-    --muted: #A9A79B;
-    --accent: #A8B88E;
-    --accent-hover: #BDCBA5;
-    --on-accent: #1E201B;
-    --photo-bg: #2E3029;
-    --line: #3A3D34;
-    --field-border: #85836F;
-    --error: #E59A8B;
-    color-scheme: dark;
-  }
-}
-
+/* Светлая тема по умолчанию. Тёмная включается только выбором пользователя (запоминается). */
 :root[data-theme="dark"] {
   --bg: #1E201B;
   --card: #272A23;

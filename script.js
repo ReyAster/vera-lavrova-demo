@@ -6,9 +6,7 @@
   /* ---------- Тема ---------- */
   var toggle = document.querySelector('[data-theme-toggle]');
   function currentTheme() {
-    var set = root.getAttribute('data-theme');
-    if (set) return set;
-    return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    return root.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
   }
   function syncMeta(theme) {
     var m = document.querySelector('meta[name="theme-color"]');
